@@ -8,6 +8,14 @@ package com.mycompany.proyectoautomovil.Auto.enumeration;
  *
  * @author DELL
  */
-public class TipoAuto {
+public enum TipoAuto {
+    
+    CIUDAD,
+    SUBCOMPACTO,
+    COMPACTO,
+    FAMILIAR,
+    EJECUTIVO,
+    SUV
+            
     
 }

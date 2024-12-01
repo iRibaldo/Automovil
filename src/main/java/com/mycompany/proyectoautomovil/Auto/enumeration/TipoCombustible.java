@@ -8,6 +8,12 @@ package com.mycompany.proyectoautomovil.Auto.enumeration;
  *
  * @author DELL
  */
-public class TipoCombustible {
+public enum TipoCombustible {
+    
+    GASOLINA,
+    BIOETANOL,
+    DIESEL,
+    BIODIESEL,
+    GASNATURAL
     
 }

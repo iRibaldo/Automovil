@@ -8,6 +8,15 @@ package com.mycompany.proyectoautomovil.Auto.enumeration;
  *
  * @author DELL
  */
-public class Color {
+public enum Color {
+    
+    BLANCO,
+    NEGRO,
+    ROJO,
+    NARANJA,
+    AMARILLO,
+    VERDE,
+    AZUL,
+    VIOLETA
     
 }
