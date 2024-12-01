@@ -25,6 +25,9 @@ public class Automoviles {
     private Color color;
     private int velocidadActual;
 
+    public Automoviles() {
+    }
+
     public Automoviles(String marca, int modelo, double motor, TipoAuto tipoAutomovil, TipoCombustible tipoCombustible, int numPuertas, int canAsientos, int velocidadMaxima, Color color, int velocidadActual) {
         this.marca = marca;
         this.modelo = modelo;
@@ -37,7 +40,9 @@ public class Automoviles {
         this.color = color;
         this.velocidadActual = velocidadActual;
     }
-
+    
+    
+    
     public String getMarca() {
         return marca;
     }
@@ -118,5 +123,45 @@ public class Automoviles {
         this.velocidadActual = velocidadActual;
     }
     
+    public void acelerar (int aumento){
+    
+        if (velocidadActual + aumento > velocidadMaxima) {
+            
+            System.out.println("!!Advertencia!! No se puede acelerar más de la velocidad permitada");
+            
+        } else { velocidadActual += aumento;
+                
+                System.out.println("Su velocidad es de: " + velocidadActual + "Km/h");
+        }
+    
+    }
+    
+    public void desacelerar(int descenso){
+        
+        if (velocidadActual - descenso < 0) {
+            
+            System.out.println("La velocidad minima de desaceleracion es de 0km/h");
+              
+        } else { velocidadActual -= descenso;
+        
+            System.out.println("La velocidad aldesacelerar es de: " + velocidadActual + "Km/h");
+        }
+        
+    }
+    
+    public void imprimir (){
+        System.out.println("Marca: " + marca);
+        System.out.println("Modelo: " + modelo);
+        System.out.println("Motor: " + motor);
+        System.out.println("Tipo de Vehiculo: " + tipoAutomovil);
+        System.out.println("Tipo de Combustible; " + tipoCombustible);
+        System.out.println("El vehiculo tiene: " + numPuertas + "puertas");
+        System.out.println("El vehiculo tiene: " + canAsientos + "asientos");
+        System.out.println("La velocidad maxima es de: " + velocidadMaxima + "Km/h");
+        System.out.println("El color del vehiculo es de: " + color);
+        System.out.println("La velocidad actual del vehiculo es de: " + velocidadActual);
+        
+    
+    }
     
 }
