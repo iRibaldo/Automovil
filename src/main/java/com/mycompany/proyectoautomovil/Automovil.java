@@ -23,6 +23,8 @@ public class Automovil {
         objAuto.acelerar(20);
            
         objAuto.desacelerar(50);
+        objAuto.frenar();
+  
            
            
 
