@@ -146,9 +146,18 @@ public class Automoviles {
         
             System.out.println("La velocidad aldesacelerar es de: " + velocidadActual + "Km/h");
         }
-        
     }
-    
+        public void frenar(){
+        velocidadActual=0;
+            System.out.println("el automovil se ha detenido"+velocidadActual);}
+
+      public double calcularTiempoLlegada(double distancia) {
+        if (velocidadActual == 0) {
+            System.out.println("El automóvil está detenido y no se puede calcular");
+            return -1;
+        }
+        return distancia / velocidadActual;
+    }
     public void imprimir (){
         System.out.println("Marca: " + marca);
         System.out.println("Modelo: " + modelo);
@@ -163,5 +172,5 @@ public class Automoviles {
         
     
     }
-    
+
 }
